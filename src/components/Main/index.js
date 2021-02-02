@@ -57,7 +57,7 @@ const Main = ({ startQuiz }) => {
 
     if (error) setError(null);
 
-    const API = `https://opentdb.com/api.php?amount=${numOfQuestions}&category=${category}&difficulty=${difficulty}&type=${questionsType}`;
+    const API = `https://raw.githubusercontent.com/eloeffler-fhnw/quiz-app/master/loeffler.json`;
 
     fetch(API)
       .then(respone => respone.json())
